@@ -4,6 +4,9 @@
 %p
   %strong Description:
   = @role.description
+%p
+  %strong Assosciated users:
+  = @associated_users
 = link_to 'Edit', edit_role_path(@role)
 |
 = link_to 'Back', roles_path

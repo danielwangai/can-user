@@ -7,6 +7,19 @@
 %p
   %strong Email:
   = @user.email
+
+
+  %string Joined on:
+  = @joined_on 
+
+
+  %strong Last logged in on
+  = @last_login 
+
+
+  %strong No. times logged in
+  = @user.sign_in_count 
+
   
 = link_to 'Edit', edit_user_path(@user)
 |
