@@ -1,0 +1,26 @@
+%p
+  %strong Name:
+  = @user.name
+%p
+  %strong Role:
+  = @user.role.name
+%p
+  %strong Email:
+  = @user.email
+
+
+  %string Joined on:
+  = @joined_on 
+
+
+  %strong Last logged in on
+  = @last_login 
+
+
+  %strong No. times logged in
+  = @user.sign_in_count 
+
+  
+= link_to 'Edit', edit_user_path(@user)
+|
+= link_to 'Back', users_path
