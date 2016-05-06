@@ -20,6 +20,10 @@ gem 'devise'
 
 gem 'cancan'
 
+gem "haml-rails"
+
+gem "erb2haml", :group => :development
+
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 
