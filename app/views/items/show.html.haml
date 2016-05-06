@@ -1,0 +1,15 @@
+%p
+  %strong Name:
+  = @item.name
+%p
+  %strong Description:
+  = @item.description
+%p
+  %strong Price:
+  = @item.price
+%p
+  %strong Seller:
+  = @item.user.name
+= link_to 'Edit', edit_item_path(@item)
+|
+= link_to 'Back', items_path
