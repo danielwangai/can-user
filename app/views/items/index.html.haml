@@ -15,7 +15,11 @@
         %td= item.price
         %td= item.user.name
         %td= link_to 'Show', item
-        %td= link_to 'Edit', edit_item_path(item)
-        %td= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' }
+  
+        - if can? :update, item
+          %td= link_to 'Edit', edit_item_path(item)
+  
+        - if can? :destroy, item
+          %td= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' }
 %br/
 = link_to 'New Item', new_item_path
