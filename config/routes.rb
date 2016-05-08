@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'welcome/index'
+
   devise_for :users
   resources :items
 
@@ -7,5 +9,5 @@ Rails.application.routes.draw do
   end
   
   resources :roles
-  root to: "items#index"
+  root to: "welcome#index"
 end
