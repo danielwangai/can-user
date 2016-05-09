@@ -1,12 +1,12 @@
+%p#notice= notice
+
 %p
-  %strong Name:
+  %b Name:
   = @role.name
 %p
-  %strong Description:
+  %b Description:
   = @role.description
-%p
-  %strong Assosciated users:
-  = @associated_users
+
 = link_to 'Edit', edit_role_path(@role)
-|
+\|
 = link_to 'Back', roles_path
