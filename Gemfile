@@ -26,6 +26,7 @@ gem "erb2haml", :group => :development
 
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+gem 'semantic-ui-sass'
 
 group :development, :test do
 
